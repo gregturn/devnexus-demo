@@ -15,7 +15,6 @@
  */
 package com.greglturnquist.devnexus;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -94,12 +93,6 @@ public class DevNexusTest {
 			this.name = name;
 		}
 
-		public List<Employee> getEmployees() {
-			if (this.employees == null) {
-				this.employees = new ArrayList<>();
-			}
-			return this.employees;
-		}
 	}
 
 	interface ManagerRepository extends CrudRepository<Manager, Long> {
